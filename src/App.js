@@ -54,7 +54,7 @@ function App() {
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
             onClick={() => setCount(count + 1)}
           >
-            ➕ Tambah
+            Tambah
           </button>
 
           <button
@@ -63,7 +63,7 @@ function App() {
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
             onClick={() => setCount(count - 1)}
           >
-            ➖ Kurang
+           Kurang
           </button>
 
           <button
@@ -72,7 +72,7 @@ function App() {
             onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
             onClick={() => setCount(0)}
           >
-            🔁 Reset
+            Reset
           </button>
         </div>
       </div>
