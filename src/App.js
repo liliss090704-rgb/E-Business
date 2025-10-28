@@ -43,7 +43,7 @@ function App() {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}>
-        <h1 style={{ marginBottom: "20px" }}>🎯 Tugas 2: Count Button</h1>
+        <h1 style={{ marginBottom: "20px" }}> Tugas 2: Count Button</h1>
         <p style={{ fontSize: "20px" }}>
           Nilai Count Saat Ini: <strong>{count}</strong>
         </p>
