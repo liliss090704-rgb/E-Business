@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "tugas3",
-=======
-  "name": "tugas2-countbutton",
->>>>>>> 7b96c16509dc05655222b4c5dfc4fc2507b86fda
   "version": "0.1.0",
   "private": true,
   "dependencies": {

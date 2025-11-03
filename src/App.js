@@ -34,7 +34,7 @@ function App() {
   return (
     <div style={containerStyle}>
       <div style={cardStyle}>
-        <h2 style={{ marginBottom: "10px" }}>⏰ Tugas 3 - useEffect Sederhana</h2>
+        <h2 style={{ marginBottom: "10px" }}>useEffect Sederhana</h2>
         <h3>{waktu}</h3>
       </div>
     </div>
