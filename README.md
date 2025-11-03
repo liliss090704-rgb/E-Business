@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# E-Business
+Repositori ini berisi tugas-tugas mata kuliah E-Business.
+
+## Tugas 2: Count Button React
+Proyek React sederhana untuk menampilkan tombol penghitung (counter).
+>>>>>>> 7b96c16509dc05655222b4c5dfc4fc2507b86fda

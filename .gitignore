@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+<<<<<<< HEAD
 # dependencies
 /node_modules
 /.pnp
@@ -13,11 +14,79 @@
 
 # misc
 .DS_Store
+=======
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm/yarn caches
+.npm
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Build and production output
+/build
+/dist
+/out
+/.next
+.nuxt
+.cache
+.parcel-cache
+.svelte-kit/
+.docusaurus
+.vitepress/dist
+
+# Testing
+coverage
+.nyc_output
+
+# Environment files
+.env
+.env.*
+!.env.example
+>>>>>>> 7b96c16509dc05655222b4c5dfc4fc2507b86fda
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
+<<<<<<< HEAD
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+# IDE and system files
+.DS_Store
+.vscode-test
+.tern-port
+
+# Misc
+node_repl_histo
+>>>>>>> 7b96c16509dc05655222b4c5dfc4fc2507b86fda
