@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
 function App() {
-  const [users, setUsers] = useState([]); // buat nyimpan data API
+  const [products, setProducts] = useState([]); // buat nyimpan data API
   const [loading, setLoading] = useState(true); // indikator loading
 
   useEffect(() => {
     // fetch API saat komponen pertama kali tampil
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://fakestoreapi.com/products")
       .then((response) => response.json()) // ubah data ke JSON
       .then((data) => {
-        setUsers(data); // simpan data ke state
+        setProducts(data); // simpan data ke state
         setLoading(false); // matikan loading
       })
       .catch((error) => {
@@ -20,10 +20,10 @@ function App() {
 
   return (
     <div style={{ padding: "20px", textAlign: "center" }}>
-      <h1>📋 Data Pengguna (Tugas 4)</h1>
+      <h1>Daftar Produk (Studi Kasus: Toko Online)</h1>
 
       {loading ? (
-        <p>⏳ Sedang mengambil data...</p>
+        <p> Sedang mengambil data produk...</p>
       ) : (
         <table
           border="1"
@@ -37,18 +37,18 @@ function App() {
           <thead>
             <tr style={{ backgroundColor: "#f2f2f2" }}>
               <th>ID</th>
-              <th>Nama</th>
-              <th>Email</th>
-              <th>Kota</th>
+              <th>Nama Produk</th>
+              <th>Harga</th>
+              <th>Kategori</th>
             </tr>
           </thead>
           <tbody>
-            {users.map((user) => (
-              <tr key={user.id}>
-                <td>{user.id}</td>
-                <td>{user.name}</td>
-                <td>{user.email}</td>
-                <td>{user.address.city}</td>
+            {products.map((product) => (
+              <tr key={product.id}>
+                <td>{product.id}</td>
+                <td>{product.title}</td>
+                <td>${product.price}</td>
+                <td>{product.category}</td>
               </tr>
             ))}
           </tbody>
