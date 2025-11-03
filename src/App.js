@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 
 function App() {
@@ -11,16 +10,6 @@ function App() {
 
     return () => clearInterval(interval);
   }, []);
-
-  return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>Tugas 3 - useEffect Sederhana</h2>
-      <h3>⏰ {waktu}</h3>
-=======
-import React, { useState } from "react";
-
-function App() {
-  const [count, setCount] = useState(0);
 
   const containerStyle = {
     display: "flex",
@@ -42,60 +31,12 @@ function App() {
     transition: "all 0.3s ease",
   };
 
-  const buttonStyle = {
-    background: "#66a6ff",
-    color: "white",
-    border: "none",
-    padding: "10px 20px",
-    margin: "10px",
-    borderRadius: "8px",
-    fontSize: "16px",
-    cursor: "pointer",
-    transition: "transform 0.2s ease",
-  };
-
-  const resetStyle = {
-    ...buttonStyle,
-    background: "#ff6b6b",
-  };
-
   return (
     <div style={containerStyle}>
       <div style={cardStyle}>
-        <h1 style={{ marginBottom: "20px" }}> Tugas 2: Count Button</h1>
-        <p style={{ fontSize: "20px" }}>
-          Nilai Count Saat Ini: <strong>{count}</strong>
-        </p>
-        <div>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
-            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
-            onClick={() => setCount(count + 1)}
-          >
-            Tambah
-          </button>
-
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
-            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
-            onClick={() => setCount(count - 1)}
-          >
-           Kurang
-          </button>
-
-          <button
-            style={resetStyle}
-            onMouseOver={(e) => (e.target.style.transform = "scale(1.1)")}
-            onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
-            onClick={() => setCount(0)}
-          >
-            Reset
-          </button>
-        </div>
+        <h2 style={{ marginBottom: "10px" }}>⏰ Tugas 3 - useEffect Sederhana</h2>
+        <h3>{waktu}</h3>
       </div>
->>>>>>> 7b96c16509dc05655222b4c5dfc4fc2507b86fda
     </div>
   );
 }
