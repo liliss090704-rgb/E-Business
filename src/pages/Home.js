@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div>
-      <h2>Selamat Datang di Toko Kami 🛒</h2>
+      <h2>Selamat Datang di Toko Kami </h2>
       <ul>
         {products.map((p) => (
           <li key={p.id}>

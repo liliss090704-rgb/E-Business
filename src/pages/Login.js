@@ -15,7 +15,7 @@ export default function Login() {
 
   return (
     <div>
-      <h2>Halaman Login 🔑</h2>
+      <h2>Halaman Login </h2>
       {!loggedIn ? (
         <form onSubmit={handleSubmit}>
           <div>
